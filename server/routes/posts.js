@@ -5,6 +5,6 @@ const router = express.Router();
 
 router.get('/',getposts)
 router.post('/',createPost)
-router.patch('/', updatePost)
+router.patch('/:id', updatePost)
 
 export default router;

@@ -10,10 +10,10 @@ const Form = ({ currentId, setCurrentId }) => {
 
     const classes = makeStyles();
     const dispatch = useDispatch()
-    const posts = useSelector(state => state.posts)
+    // const posts = useSelector(state => state.posts)
     const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
-    const post = posts.find((post) => post._id === currentId ? post : null)
-    // const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
+    // const post = posts.find((post) => post._id === currentId ? post : null)
+    const post = useSelector((state) => (currentId ? state.posts.find((post) => post._id === currentId) : null));
 
     useEffect(() => {
         if (post) setPostData(post);
@@ -23,17 +23,19 @@ const Form = ({ currentId, setCurrentId }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if (currentId) {
-            dispatch(updatePost(currentId, post))
+            dispatch(updatePost(currentId, postData))
+            console.log("test...")
+            clear()
         }
         else {
             dispatch(createPost(postData))
+            clear()
         }
-        clear()
     }
 
     const clear = () => {
         setCurrentId = null;
-        setPostData = { creator: '', title: '', message: '', tags: '', selectedFile: '' }
+        setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' })
     }
 
     return (
