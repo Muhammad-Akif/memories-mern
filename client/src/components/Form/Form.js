@@ -16,7 +16,10 @@ const Form = ({ currentId, setCurrentId }) => {
     const post = useSelector((state) => (currentId ? state.posts.find((post) => post._id === currentId) : null));
 
     useEffect(() => {
-        if (post) setPostData(post);
+        if (post){
+            console.log("check ==> ",post)
+            setPostData(post);
+        } 
     }, [post]);
 
 
@@ -34,7 +37,7 @@ const Form = ({ currentId, setCurrentId }) => {
     }
 
     const clear = () => {
-        setCurrentId = null;
+        setCurrentId(null);
         setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' })
     }
 
