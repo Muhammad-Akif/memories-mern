@@ -4,17 +4,21 @@ import { Paper, TextField, Typography, Button } from '@material-ui/core';
 import FileBase from 'react-file-base64'
 import { useDispatch } from 'react-redux'
 import { createPost, updatePost } from '../../actions/posts'
+import { useSelector } from 'react-redux'
 
 const Form = ({ currentId, setCurrentId}) => {
-
+    
     const classes = makeStyles();
     const dispatch = useDispatch()
+    const posts = useSelector(state => state.posts)
     const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
+    const post = posts.find((post) => post._id === currentId ? post : null)
 
     const handleSubmit = (e) => {
         e.preventDefault()
         if(currentId) {
-            dispatch(updatePost(currentId, postData))
+            dispatch(updatePost(currentId, post))
+            setPostData(post)
         }
         else {
             dispatch(createPost(postData))
