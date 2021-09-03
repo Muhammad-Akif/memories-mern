@@ -4,4 +4,4 @@ const url = 'http://localhost:5000/post'
 
 export const fetchPosts = () => axios.get(url)
 export const createPost = (newPost) => axios.post(url, newPost)
-export const updatePost = (currentId, updatedPost)
+export const updatePost = (id, updatedPost) => axios.post(`${url}/${id}`, updatedPost)

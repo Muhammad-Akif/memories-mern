@@ -32,7 +32,7 @@ const Form = ({ currentId, setCurrentId }) => {
     }
 
     const clear = () => {
-        currentId = null;
+        setCurrentId = null;
         setPostData = { creator: '', title: '', message: '', tags: '', selectedFile: '' }
     }
 
