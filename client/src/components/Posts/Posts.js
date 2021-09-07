@@ -1,13 +1,13 @@
-import React from 'react'
-import Post from './Post/Post'
-import makeStyles from './styles'
-import { Grid, CircularProgress } from '@material-ui/core'
-import { useSelector } from 'react-redux'
+import React from 'react';
+import Post from './Post/Post';
+import makeStyles from './styles';
+import { Grid, CircularProgress } from '@material-ui/core';
+import { useSelector } from 'react-redux';
 
 const Posts = ({ setCurrentId }) => {
     
     const classes = makeStyles();
-    const posts = useSelector(state => state.posts)
+    const posts = useSelector(state => state.posts);
     console.log(" Posts ===> ", posts);
 
     return (

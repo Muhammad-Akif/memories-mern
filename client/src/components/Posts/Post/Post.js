@@ -1,17 +1,17 @@
-import React from 'react'
-import makeStyles from './styles'
-import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core'
+import React from 'react';
+import makeStyles from './styles';
+import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import DeleteIcon from '@material-ui/icons/Delete';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import moment from 'moment';
-import { useDispatch } from 'react-redux'
-import { deletePost, likePost } from '../../../actions/posts'
+import { useDispatch } from 'react-redux';
+import { deletePost, likePost } from '../../../actions/posts';
 
 const Post = ({ post, setCurrentId }) => {
 
     const classes = makeStyles();
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     return (
         <Card className={classes.card}>
