@@ -31,3 +31,12 @@ export const updatePost = async (req,res)=>{
     const updatedPost = await PostMessage.findByIdAndUpdate(_id, {...post, _id}, {new: true})
     res.json(updatedPost);
 }
+
+export const deletePost = (id) => {
+    try {
+        if(!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${_id}`);
+        PostMessage
+    } catch (error) {
+        
+    }
+}
