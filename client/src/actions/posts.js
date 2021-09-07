@@ -20,10 +20,17 @@ export const createPost = (post) => async (dispatch) => {
 
 export const updatePost = (currentId, post) => async (dispatch) => {
     try {
-        console.log(currentId, post)
         const { data } = await api.updatePost(currentId, post);
-        console.log("updated-Database-Data ===> ",data)
         dispatch({type: "UPDATE", payload: data})
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const deletePost = (id) => async (dispatch) => {
+    try {
+        await api.deletePost(id);
+        dispatch({type: "DELETE", payload: id})
     } catch (error) {
         console.log(error);
     }
