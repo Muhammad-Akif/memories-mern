@@ -12,12 +12,12 @@ const Form = ({ currentId, setCurrentId }) => {
     const dispatch = useDispatch()
     // const posts = useSelector(state => state.posts)
     const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
-    // const post = posts.find((post) => post._id === currentId ? post : null)
+    // const post = currentId ? posts.find((post) => post._id === currentId) : null
     const post = useSelector((state) => (currentId ? state.posts.find((post) => post._id === currentId) : null));
 
     useEffect(() => {
         if (post){
-            console.log("check ==> ",post)
+            // console.log("check ==> ",post)
             setPostData(post);
         } 
     }, [post]);
@@ -27,7 +27,7 @@ const Form = ({ currentId, setCurrentId }) => {
         e.preventDefault()
         if (currentId) {
             dispatch(updatePost(currentId, postData))
-            console.log("test...")
+            // console.log("testing Update ( currentId, postData ) ===> ", currentId, postData)
             clear()
         }
         else {
@@ -44,7 +44,7 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
         <Paper className={classes.paper}>
             <form autoComplete="off" noValidate className={` ${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
-                <Typography variant="h6">Create</Typography>
+                <Typography variant="h6">{currentId ? 'Editing' : 'Creating'} a Memory</Typography>
                 <TextField name="creator" variant="outlined" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
                 <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
                 <TextField name="message" variant="outlined" label="Message" fullWidth value={postData.message} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
