@@ -9,7 +9,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
           <Navbar />
         <Switch>
           <Route path="/" exact component={Home}/>

@@ -80,6 +80,7 @@ function Auth() {
                         </Grid>
                     </Grid>
                 </form>
+                
             </Paper>
         </Container>
     )
