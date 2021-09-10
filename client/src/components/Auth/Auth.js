@@ -6,7 +6,7 @@ import Input from './Input';
 import { GoogleLogin } from "react-google-login"
 import Icon from './icon';
 import { useDispatch } from 'react-redux'
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 
 function Auth() {
     const classes = useStyles();
