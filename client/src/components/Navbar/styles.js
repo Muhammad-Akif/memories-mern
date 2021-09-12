@@ -21,7 +21,7 @@ export default makeStyles((theme) => ({
   toolbar: {
     display: 'flex',
     justifyContent: 'flex-end',
-    width: ' 350px',
+    width: '360px',
   },
   profile: {
     display: 'flex',
