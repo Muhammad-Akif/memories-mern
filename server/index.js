@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 
 import postRoutes from './routes/posts.js';
-// import userRoutes from './routes/user.js';
+import userRoutes from './routes/user.js';
 
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
 
 app.use('/posts', postRoutes);
-// app.use('/user', postRoutes);
+app.use('/user', userRoutes);
 
 const CONNECTION_URL = "mongodb+srv://akif:16421@cluster0.6dv6g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
