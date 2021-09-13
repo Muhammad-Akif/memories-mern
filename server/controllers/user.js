@@ -17,7 +17,7 @@ export const signin = async (req, res) => {
 
     if (!isPasswordCorrect) return res.status(400).json({ message: "Invalid credentials" });
 
-    const token = jwt.sign({ email: existingUser.email, password: existingUser.password }, 'test', { expiresIn: "1h" })
+    const token = jwt.sign({ email: existingUser.email, id: existingUser._id }, 'test', { expiresIn: "1h" })
 
     res.status(200).json({ result: existingUser, token });
 
@@ -28,18 +28,20 @@ export const signin = async (req, res) => {
 
 export const signup = async (req, res) => {
   console.log("req ==> ", req.body);
-  const { email, password, firstName, lastName } = req.body;
+  const { email, password, confirmPassword, firstName, lastName } = req.body;
 
   try {
-    const existingUser = await UserModal.findOne({ email });
+    const existingUser = await User.findOne({ email });
 
     if (existingUser) return res.status(400).json({ message: "User already exists" });
+    
+    if (password !== confirmPassword) return res.status(400).json({ message: "Password don't match ..." });
 
     const hashedPassword = await bcrypt.hash(password, 12);
 
-    const result = await UserModal.create({ email, password: hashedPassword, name: `${firstName} ${lastName}` });
+    const result = await User.create({ email, password: hashedPassword, name: `${firstName} ${lastName}` });
 
-    const token = jwt.sign({ email: result.email, id: result._id }, secret, { expiresIn: "1h" });
+    const token = jwt.sign({ email: result.email, id: result._id }, 'test', { expiresIn: "1h" });
 
     res.status(201).json({ result, token });
 
