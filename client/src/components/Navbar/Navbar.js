@@ -5,6 +5,7 @@ import memories from '../../images/memories.png';
 import useStyles from './styles';
 import { useLocation, useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
+import decode from 'jwt-decode'
 
 function Navbar() {
     const classes = useStyles();
@@ -21,9 +22,16 @@ function Navbar() {
     
     useEffect(()=>{
         const token = user?.token;
-        // JWT 
+        if(token) {
+            const decodedToken = decode(token)
+
+            if (decodedToken.exp * 1000 < new Date().getTime()){
+                logout();
+            } 
+        }
         setUser(JSON.parse(localStorage.getItem('profile')));
-    },[location])
+    },[location]);
+    
     return (
         <AppBar className={classes.appBar} position="static" color="inherit">
             <div className={classes.brandContainer}>
