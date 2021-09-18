@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from 'react'
-import { Container, Grow, Grid } from '@material-ui/core';
+import React, { useState, useEffect } from 'react'
+import { Container, Grow, Grid, Paper } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 
 import Posts from '../Posts/Posts';
 import Form from '../Form/Form';
 import { getPosts } from '../../actions/posts';
+import Paginate from '../Pagination';
 
 
 function Home() {
@@ -23,6 +24,9 @@ function Home() {
                     </Grid>
                     <Grid item xs={12} sm={4}>
                         <Form currentId={currentId} setCurrentId={setCurrentId} />
+                        <Paper elevation={6}> 
+                            <Paginate />
+                        </Paper>
                     </Grid>
                 </Grid>
             </Container>

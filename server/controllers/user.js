@@ -31,7 +31,9 @@ export const signup = async (req, res) => {
   const { email, password, confirmPassword, firstName, lastName } = req.body;
 
   try {
+    console.log('email ==> ',{email});
     const existingUser = await User.findOne({ email });
+    console.log('existingUser ==> ',existingUser);
 
     if (existingUser) return res.status(400).json({ message: "User already exists" });
     
