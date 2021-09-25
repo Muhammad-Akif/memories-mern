@@ -8,12 +8,12 @@ function Paginate() {
     return (
         <Pagination
         classes ={{ ul: classes.ul}}
-        count={5}
-        page={1}
+        count={5} //no. pages
+        page={1} //current page
         variant="outlined"
         color="primary"
         renderItem={(item) => (
-            <PaginationItem {...item} component={Link} to={`/posts?page=${}`} />
+            <PaginationItem {...item} component={Link} to={`/posts?page=${1}`} />
         )
         }
         />
