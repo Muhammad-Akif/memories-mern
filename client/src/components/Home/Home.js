@@ -6,7 +6,7 @@ import ChipInput from 'material-ui-chip-input'
 import useStyles from './styles'
 import Posts from '../Posts/Posts';
 import Form from '../Form/Form';
-import { getPosts } from '../../actions/posts';
+import { getPosts,getPostsBySearch } from '../../actions/posts';
 import Paginate from '../Pagination';
 
 function useQuery(){ //from react-router-dom
@@ -18,6 +18,7 @@ function Home() {
     const [search, setSearch] = useState('');
     const [tags, setTags] = useState([]);
     const classes = useStyles();
+    const query = useQuery();
     const dispatch = useDispatch();
     const history = useHistory();
     const page = query.get('page') || 1;
@@ -29,7 +30,7 @@ function Home() {
 
     const searchPost = () => {
         if (search.trim()) {
-            //dispatch();
+            dispatch(getPostsBySearch({search, tags: tags.join(',')}));
         }
         else {
             history.push("/");
@@ -54,7 +55,7 @@ function Home() {
                         <AppBar className={classes.appBarSearch} position="static" color="inherit">
                             <TextField
                             name="search"
-                            varient="outlined"
+                            variant="outlined"
                             label="search Memories"
                             onKeyPress={handleKeyPress}
                             fullWidth
@@ -67,7 +68,7 @@ function Home() {
                                 onAdd={handleAdd}
                                 onDelete={handleDelete}
                                 label="Search Tags"
-                                varient="outlined"
+                                variant="outlined"
                             />
                             <Button onClick={searchPost} className={classes.searchButton} variant="contained" color="primary">Search</Button>
                         </AppBar>
