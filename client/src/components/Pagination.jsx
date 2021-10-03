@@ -7,7 +7,6 @@ import { getPosts } from '../actions/posts'
 
 function Paginate({ page }) {
     const { numberOfPages } = useSelector((state) => state.posts);
-    console.log('pts ==> ', numberOfPages);
 
     const classes = useStyles();
     const dispatch = useDispatch();
