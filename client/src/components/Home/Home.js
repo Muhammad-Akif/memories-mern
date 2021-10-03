@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { Container, Grow, Grid, Paper, AppBar, TextField, Button, Chip } from '@material-ui/core';
+import React, { useState } from 'react'
+import { Container, Grow, Grid, Paper, AppBar, TextField, Button } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
-import { useHistory,useLocation } from 'react-router';
+import { useHistory, useLocation } from 'react-router';
 import ChipInput from 'material-ui-chip-input'
 import useStyles from './styles'
 import Posts from '../Posts/Posts';
@@ -9,7 +9,7 @@ import Form from '../Form/Form';
 import { getPostsBySearch } from '../../actions/posts';
 import Paginate from '../Pagination';
 
-function useQuery(){ //from react-router-dom
+function useQuery() { //from react-router-dom
     return new URLSearchParams(useLocation().search)
 }
 
@@ -26,7 +26,7 @@ function Home() {
 
     const searchPost = () => {
         if (search.trim() || tags) {
-            dispatch(getPostsBySearch({search, tags: tags.join(',')}));
+            dispatch(getPostsBySearch({ search, tags: tags.join(',') }));
             history.push(`/posts/search?searchQuery=${search || 'none'}&tags=${tags.join(',')}`)
         }
         else {
@@ -38,8 +38,8 @@ function Home() {
             //search Post
         }
     }
-    const handleAdd = (tag) => setTags([...tags,tag]) 
-    const handleDelete = (tagToDelete) => setTags(tags.filter((tag) => tag!==tagToDelete)) 
+    const handleAdd = (tag) => setTags([...tags, tag])
+    const handleDelete = (tagToDelete) => setTags(tags.filter((tag) => tag !== tagToDelete))
 
     return (
         <Grow in>
@@ -51,16 +51,16 @@ function Home() {
                     <Grid item xs={12} sm={6} md={3}>
                         <AppBar className={classes.appBarSearch} position="static" color="inherit">
                             <TextField
-                            name="search"
-                            variant="outlined"
-                            label="search Memories"
-                            onKeyPress={handleKeyPress}
-                            fullWidth
-                            value={search}
-                            onChange={(e) => setSearch(e.target.value)}
+                                name="search"
+                                variant="outlined"
+                                label="search Memories"
+                                onKeyPress={handleKeyPress}
+                                fullWidth
+                                value={search}
+                                onChange={(e) => setSearch(e.target.value)}
                             />
                             <ChipInput
-                                style={{ margin: '10px 0'}}
+                                style={{ margin: '10px 0' }}
                                 value={tags}
                                 onAdd={handleAdd}
                                 onDelete={handleDelete}
@@ -70,10 +70,12 @@ function Home() {
                             <Button onClick={searchPost} className={classes.searchButton} variant="contained" color="primary">Search</Button>
                         </AppBar>
                         <Form currentId={currentId} setCurrentId={setCurrentId} />
+                       {/* {console.log("check string ===> ",searchQuery)}
+                       {console.log("check tags ===> ",tags)} */}
                         {(!searchQuery && !tags.length) && (
-                        <Paper elevation={6}> 
-                            <Paginate page={page} className={classes.pagination}/>
-                        </Paper>
+                            <Paper className={classes.pagination} elevation={6}>
+                                <Paginate page={page} />
+                            </Paper>
                         )}
                     </Grid>
                 </Grid>
