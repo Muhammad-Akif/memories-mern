@@ -1,0 +1,661 @@
+[33mcommit a325b768e9966818d430b9c5f01c1aa8f7ef8189[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Sun Oct 3 10:45:37 2021 +0500
+
+    added post details component style action constants api
+
+[33mcommit 807353319e63256c8d47fd6de3bce2ebc6bb1979[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Sun Oct 3 08:50:39 2021 +0500
+
+    added loading UI and completed
+
+[33mcommit 49527d448bcdf809834a948146ca85471ad35be7[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Sun Oct 3 08:29:34 2021 +0500
+
+    added loading reducer action and constants
+
+[33mcommit 57fb87a74785dba9bb206ac11e7fca9266ab4c5f[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Thu Sep 30 21:52:24 2021 +0500
+
+    pagination bug solved
+
+[33mcommit 278fc68d6f9d04544fc9538af01d71d51be71ba2[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Thu Sep 30 21:15:33 2021 +0500
+
+    pagination completed
+
+[33mcommit e81f5fcaca45275d75675429de5f0ae1145e2fb8[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Thu Sep 30 20:56:28 2021 +0500
+
+    working on pagination
+
+[33mcommit df1415f06c8df006c1fe8bfe347b99ed1fc72edc[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Tue Sep 28 23:25:47 2021 +0500
+
+    added styling to navbar and app background
+
+[33mcommit 4e0e4055a6be0539817c5dbb3545b2033dbd5a66[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Tue Sep 28 23:10:36 2021 +0500
+
+    added SearchQuery and tags backend + client reducer
+
+[33mcommit 1f817168f273b0067ad7ffca3e44cd247c237aa6[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Tue Sep 28 21:54:39 2021 +0500
+
+    added Search redux client
+
+[33mcommit 071d31a47864b4fc032795852b5fe0b2f39eddcb[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Tue Sep 28 19:42:28 2021 +0500
+
+    added Search UI
+
+[33mcommit 52b9412cf23bcfa772a370920218d3540ee18395[m
+Author: muhammad-akif <muhammadakif2917@gmail.com>
+Date:   Sun Sep 26 00:54:41 2021 +0500
+
+    added more routes and components client side
+
+[33mcommit 6b530a677039f392f5c2ab1b256ea3039fb790c9[m[33m ([m[1;32mmain[m[33m)[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Sat Sep 18 14:39:00 2021 +0500
+
+    added Pagination comp & styling
+
+[33mcommit bde4911ff82bd825fa47742f97824372b7b573e2[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 14 23:31:56 2021 +0500
+
+    updated useEffect logic in navbar for jwt expiree...
+
+[33mcommit e1106993192f247752cd37ad6ab1f2818ae0ba50[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 14 22:57:56 2021 +0500
+
+    added likes comp in post.js, fixed server like issue and updated delete and edit logic
+
+[33mcommit 20ff686a87227cdffe4f04903f54fbfb955cec87[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 14 22:14:02 2021 +0500
+
+    updated Form Post files client side
+
+[33mcommit 0dc6928ad561563c80ca1880c4a4be056f6d1323[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 14 21:44:11 2021 +0500
+
+    updated createPost and its Schema (server)
+
+[33mcommit 7e561d5403c8c48aaa38c0203ec807291b1e5859[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 23:31:29 2021 +0500
+
+    fixed signup server side issue
+
+[33mcommit 1fe3daa6c8cba6ddbeef0e410d119d412788932d[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 22:49:36 2021 +0500
+
+    fixed signup client issue
+
+[33mcommit 46e8ec72be12816a220f3bbbdad818686782bf2b[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 22:05:58 2021 +0500
+
+    updated api for middlewares
+
+[33mcommit 76d8c4fafd6bebba9b4a572bc10a991bb852bfcb[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 21:33:15 2021 +0500
+
+    added signin and signup actions
+
+[33mcommit 4f2f6eee21083c9fcdb00511eaffdee92a19b5fd[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 21:29:11 2021 +0500
+
+    added signin and signup api req client
+
+[33mcommit dc82785269e838618f89611bfc2bd1a65175e81e[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 16:55:33 2021 +0500
+
+    updated like model
+
+[33mcommit 00e109c20aa9c01e6b2de70359e4e12eb6e43ae2[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 16:54:29 2021 +0500
+
+    updated like controller
+
+[33mcommit 2981c35c5c4ead1af2d9eb6d76bc7c87940c833b[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 16:31:30 2021 +0500
+
+    added auth middleware in routes post.js
+
+[33mcommit 4d469b6ace14f83840c1e7b1ca7c4b470891cb9e[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 16:28:46 2021 +0500
+
+    added auth middleware
+
+[33mcommit 76295db0ece0163992fb247f95b14b09f7de88ba[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 14:55:06 2021 +0500
+
+    added signup controller and route
+
+[33mcommit 043cb412d39162b891153704f48b3408ea5ac763[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 14:48:09 2021 +0500
+
+    added signin controller
+
+[33mcommit 4630114f92683c7a522bbfe7bf8e44fe55ce3613[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Mon Sep 13 14:02:18 2021 +0500
+
+    added user Schema
+
+[33mcommit 64f06c127dde255d4e1d98286b8534bc47c3f5fe[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Sun Sep 12 21:38:27 2021 +0500
+
+    windup for now ... at controllers (user)
+
+[33mcommit 96421f28b7ae2f139cff85f94e1f989fa124a137[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Sun Sep 12 21:28:11 2021 +0500
+
+    added server router user.js
+
+[33mcommit 364eaaa2737419361af04c36d2fa5c4efa1b0ea3[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Sun Sep 12 21:25:42 2021 +0500
+
+    added server route in index.js
+
+[33mcommit f097b2acfcd753faf7d6615ded34652a9379d1a3[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Sun Sep 12 13:09:23 2021 +0500
+
+    added JWT form End work including reducer action and form input handlers ...
+
+[33mcommit 5f5cd9d9ffd733da2532872067270f5f5d9d05cb[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 23:51:34 2021 +0500
+
+    added comp update in navbar and updated logout changes
+
+[33mcommit 94258bfd84927766d500b9be452abe3e9ac0b228[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 23:43:18 2021 +0500
+
+    added logout functionality
+
+[33mcommit fe871fb0abaf8f69160164c515aa7c0865371248[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 23:08:43 2021 +0500
+
+    worked on user UI and local Storage
+
+[33mcommit 10719d8d8e52f2a7ad6ca85425113849689574db[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 20:03:54 2021 +0500
+
+    added auth reducer
+
+[33mcommit 5bcb2ca360f2766fafcdba42ae3b2225ec90ffaf[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 19:56:48 2021 +0500
+
+    working Google Oauth
+
+[33mcommit 550157217dff37283d75eb024b7a38ad03aa062f[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 18:01:10 2021 +0500
+
+    added Input comp and updated auth comp
+
+[33mcommit ad8527c0394c102bf0b0ca71d69aedfd2b5ac0dd[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 16:05:34 2021 +0500
+
+    added Auth component and completed routing
+
+[33mcommit 4c91b018fad1d747b9a85b9a623c5ce45f94c302[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 15:57:08 2021 +0500
+
+    added routes and Home comp.
+
+[33mcommit ededeea97e30d50e1bca74eb34d1e1b51c516582[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 15:46:21 2021 +0500
+
+    updated navbar
+
+[33mcommit 072b78d83fedceab68daf3b338825022e7406f87[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 10 15:21:49 2021 +0500
+
+    added nevbar component
+
+[33mcommit 45399e6453d812379c38cbc046be8d5dc2281e4c[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 9 09:31:55 2021 +0500
+
+    added few dependancies ready to build
+
+[33mcommit dee0112038f68be058ebf19fd30775349a27f9a7[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 9 09:10:41 2021 +0500
+
+    #2nd Phase of Mern Memories App ready basic temp...
+
+[33mcommit 8c8d46d81a591127395d380304c075cd29880b4d[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Wed Sep 8 19:01:29 2021 +0500
+
+    updated version
+
+[33mcommit 548c001b2585cee2f42e75b6d9866d5ed3fd3206[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Wed Sep 8 13:48:11 2021 +0500
+
+    added server ignore file
+
+[33mcommit a03cf2a05d87ca723bbbe73d7d1c3b39a0633d48[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Wed Sep 8 12:18:38 2021 +0500
+
+    added .env.example file
+
+[33mcommit f5bd770cc16dc4f611f840cd572e5b3ff79dcc28[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Wed Sep 8 12:16:02 2021 +0500
+
+    added env config in index.js
+
+[33mcommit e2c9415a22f160480953cab070d3a48449bd5d99[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Wed Sep 8 12:05:41 2021 +0500
+
+    added server .env file
+
+[33mcommit c31e1f7e6a14c517121c8219c15cc0e7c0c6eebc[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 23:29:14 2021 +0500
+
+    added constants exporting variables to reducer
+
+[33mcommit 67bf970e8b66aff43f539d75e0be2ded970cf04e[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 23:27:31 2021 +0500
+
+    added constants exporting variables
+
+[33mcommit 360ae45aeb75a8fcf5189843d8a8d1bbed9729d1[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 23:12:56 2021 +0500
+
+    added styling and responsiveness
+
+[33mcommit 9e609c3083d0532d0e15a2274a2240057508af2b[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 21:40:42 2021 +0500
+
+    completed Basic MERN Crud
+
+[33mcommit 5a965752eb72d01b0a444733774232ab75109eda[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 21:12:34 2021 +0500
+
+    added client like form functionality
+
+[33mcommit 5089180a500222af538e2dec92e1c4cffde7c664[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 21:00:24 2021 +0500
+
+    added client like reducer
+
+[33mcommit 272da5181aba93b70b80ab5f0c4b27f51a3116fa[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:57:40 2021 +0500
+
+    added client like action
+
+[33mcommit f36a079315214a5e54d6e8d8c6551b90bef8ff1d[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:55:45 2021 +0500
+
+    added client like api
+
+[33mcommit 8baccbaa9fe432a2c21596b45f125d4b44afe280[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:50:09 2021 +0500
+
+    completed server like Controller
+
+[33mcommit 02a8cf26ea54803f6d4cf589a73aef5f6a997e0b[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:48:54 2021 +0500
+
+    added server like Controller
+
+[33mcommit e6327cc885e7b7bdc267311e471f2cbbd0a4c7aa[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:37:01 2021 +0500
+
+    added server like  route
+
+[33mcommit 12362619676a41d938a26c1cb1d4da6425247875[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:29:07 2021 +0500
+
+    completed delete functionality
+
+[33mcommit 08eabceefcfc00a416f652283dbdc58b0cd93c8e[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:16:01 2021 +0500
+
+    added client delete form functionality
+
+[33mcommit 924641b5123aeb1611c8e8824dc2f413a9003bc6[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:12:04 2021 +0500
+
+    added client delete reducer
+
+[33mcommit 1c2d106148d29ffbd82449ce2a7a07597d4a37de[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:10:21 2021 +0500
+
+    added client delete action
+
+[33mcommit 8399fed44295c78d3ff2946994b6323506a038a9[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:08:46 2021 +0500
+
+    added client delete api
+
+[33mcommit bfd888a673ca4c7deb9eb334f5f082a74992d0fc[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 20:00:19 2021 +0500
+
+    added server Delete Controller
+
+[33mcommit 603842694de0c76cf3e2ae67c067ad7c1bd70109[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 19:55:20 2021 +0500
+
+    added server route
+
+[33mcommit b635e678888505d648d5cb0c5526a0243b83ec68[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Sep 7 19:41:30 2021 +0500
+
+    added form title logic
+
+[33mcommit 0e658ac69b7b95c9b1a2af29067e24d55bc15ffc[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 23:50:34 2021 +0500
+
+    bug solved update functionality completed
+
+[33mcommit 39a0be7e70a33891a877d0862fc4394a247914d3[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 18:13:35 2021 +0500
+
+    bug solving
+
+[33mcommit 6d60414c442ac7148eb822421e491e0ee76b0fa0[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 17:48:45 2021 +0500
+
+    added update reducer in client side
+
+[33mcommit 16c5dd1a747a3a05a5e7152b672b6d218b48c4ff[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 17:11:08 2021 +0500
+
+    updatedPost action in client side
+
+[33mcommit 8a7ccabd38ca1470f194632e0ccf716b28c106f8[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 17:08:05 2021 +0500
+
+    added updatePost controller server side
+
+[33mcommit 86592797687d2270a8115142debdc747250f58b2[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 16:52:51 2021 +0500
+
+    updated routes server side
+
+[33mcommit c6802e6ce440802ea6135f02eeb5c1872315eb23[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 16:51:48 2021 +0500
+
+    updated api's client side
+
+[33mcommit d64ee77e85e8e82bb9e2a77b6c578df4611b7bd5[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 16:47:27 2021 +0500
+
+    handle didUpdate in form.js
+
+[33mcommit 4540cd057b577f90673608b09435ccd1cfd01b0a[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 16:30:34 2021 +0500
+
+    added clear function
+
+[33mcommit 13d51c522d15f4e73a27d4319a2c402347575309[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 16:27:29 2021 +0500
+
+    input form info from client logic
+
+[33mcommit 619d09d24fc3938e31a76cf1671d10bf29760c80[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 16:20:57 2021 +0500
+
+    working on action.js update
+
+[33mcommit d744ffc5ea50694549b58d4cb8bfdb72fb5861a3[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 16:17:02 2021 +0500
+
+    set current id in post.js
+
+[33mcommit 8123f8f8007401010240dfe20ef9674bd1cf0524[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 16:12:04 2021 +0500
+
+    added current id in App.js
+
+[33mcommit 7d20acfd1a971d53439ed7dc3ffd54ef39d795ab[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 15:02:15 2021 +0500
+
+    added post.js finialized Card UI
+
+[33mcommit 4814d0746254fdba4d39e8697346f92a0e06e37f[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 14:50:05 2021 +0500
+
+    added post.js Card UI
+
+[33mcommit f15c1477af875b6f232d5b1f170bfabf26b13c07[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 14:43:57 2021 +0500
+
+    added post.js imports
+
+[33mcommit 96cae1257e3a445772e70c2db1406a32be63e426[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 14:40:44 2021 +0500
+
+    added posts.js UI
+
+[33mcommit d4945176df752262bfedbabe7deb4e75d3ef0ef9[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 14:16:41 2021 +0500
+
+    added background svg index.css
+
+[33mcommit 5e0bc85e83d2f18d09fab42f47c4688e09775234[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Fri Sep 3 14:09:31 2021 +0500
+
+    completes first phase
+
+[33mcommit a0610267e6f27ab38a7154e4271794666652b933[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 12:04:24 2021 +0500
+
+    completed first updated client connected mern
+
+[33mcommit 1f420bd65dcbecc66f875c2f917d1b8f1bdd353b[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 11:50:53 2021 +0500
+
+    added client updated axios post
+
+[33mcommit 33e73cfa6582335ebc5603623b293c7f1bbc439b[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 11:50:04 2021 +0500
+
+    added client axios post
+
+[33mcommit 42f95830c4a1d218dc118c928aead63b49cad2e0[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 11:40:12 2021 +0500
+
+    added client post Form
+
+[33mcommit 1e09663d26db3539227441e30f73acc9baec2017[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 11:19:42 2021 +0500
+
+    working on client post Form
+
+[33mcommit 9470e10dab3f21e7a8a7e28cb4144354be0052a7[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 10:36:24 2021 +0500
+
+    added client redux selector to posts.js
+
+[33mcommit dda4897ca0e69fc9bff26eb92a9a638ca946b273[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:57:28 2021 +0500
+
+    added client redux getPosts action
+
+[33mcommit 36d5e0033522a621e5ec891173fd3b5bf0fe206d[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:48:03 2021 +0500
+
+    added client redux dispatch to app.js
+
+[33mcommit 543103fb20c65c628c0dd6d01f768cceead0ee00[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:43:27 2021 +0500
+
+    added client redux reducers files
+
+[33mcommit 771d32f98a8839baa1cabcc99bf9eab4c1469a8e[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:31:15 2021 +0500
+
+    added client redux file structure
+
+[33mcommit c89d27d8b6e5ac15a9f2f18146458ae1ebd7026a[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:14:41 2021 +0500
+
+    added server moved routes middleware at end
+
+[33mcommit 17f887c609b3ad7890bacf525f836c8d87e5817d[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:11:34 2021 +0500
+
+    added client api request file
+
+[33mcommit 4ca411dd10502f2b2cad2e930ad4b8879432e2f1[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:09:46 2021 +0500
+
+    added client Posts.js styles
+
+[33mcommit cf64fda357db28312021fcb5ab4a651b75d1b5e7[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:08:49 2021 +0500
+
+    added client Post.js styles
+
+[33mcommit 91c66bc86946b76c742c7b2c001b3c6c0a03a546[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:07:29 2021 +0500
+
+    added client Form styles
+
+[33mcommit 940db583d3d968f5cce1095f56be623ae7209bc8[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 08:05:23 2021 +0500
+
+    added client app.js styles
+
+[33mcommit 06421e92aaf486c4996f6b7913b42a3e6df1533b[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Thu Sep 2 00:00:14 2021 +0500
+
+    added client app.js styles
+
+[33mcommit c911e7e5e4db19b9781025ce9b14f4bf67e8d67c[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Wed Sep 1 23:59:50 2021 +0500
+
+    Revert "added client APP."
+    
+    This reverts commit 89da2d9ef2ba1a55b0199044a93f88f819963a52.
+
+[33mcommit 89da2d9ef2ba1a55b0199044a93f88f819963a52[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Wed Sep 1 23:56:24 2021 +0500
+
+    added client APP.
+
+[33mcommit d17ed75da6c6e88e3d8e6b26f10d6ff33f671ee6[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Aug 31 23:33:31 2021 +0500
+
+    added client material-ui components in app.js and some basic file structures
+
+[33mcommit 5aeaaef201a139f0a64405c14b78d5e33c67604d[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Aug 31 23:01:28 2021 +0500
+
+    added client app basic ui in app.js and file structure in previous commit
+
+[33mcommit cb88383fe7686520325d11a309fe0bc6cd8982ff[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Tue Aug 31 22:27:10 2021 +0500
+
+    added server side models controllers routes ...
+
+[33mcommit 652ffe582ba4146bf8f9c70ef673fd978c9abafa[m
+Author: muhammad-akif <muhammad-akif@outlook.com>
+Date:   Sun Aug 29 17:09:45 2021 +0500
+
+    initial commit
