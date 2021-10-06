@@ -21,7 +21,7 @@ const Post = ({ post, setCurrentId }) => {
     history.push(`/posts/${post._id}`)
   }
   const Likes = () => { //like component
-    if (post.likes.length > 0) {
+    if (post.likes?.length > 0) {
       return post.likes.find((like) => like === (user?.result?.googleId || user?.result?._id))
         ? (
           <><ThumbUpAltIcon fontSize="small" />&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}</>
@@ -40,13 +40,15 @@ const Post = ({ post, setCurrentId }) => {
           <Typography variant="h6">{post.name}</Typography>
           <Typography variant="body2">{moment(post.createdAt).fromNow()}</Typography>
         </div>
-        {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
-          <div className={classes.overlay2}>
-            <Button onClick={() => setCurrentId(post._id)} style={{ color: 'white' }} size="small">
-              <MoreHorizIcon fontSize="default" />
-            </Button>
-          </div>
-        )}
+      </ButtonBase>
+      {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
+        <div className={classes.overlay2}>
+          <Button onClick={() => setCurrentId(post._id)} style={{ color: 'white' }} size="small">
+            <MoreHorizIcon fontSize="default" />
+          </Button>
+        </div>
+      )}
+      <ButtonBase className={classes.cardAction} onClick={openPost}>
         <div className={classes.details}>
           <Typography variant="body2" color="textSecondary" component="h2">{post.tags.map((tag) => `#${tag} `)}</Typography>
         </div>

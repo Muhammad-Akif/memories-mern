@@ -7,7 +7,6 @@ const reducer = (state = { isLoading: true, posts: [], post: {} }, action) => {
     case END_LOADING:
       return { ...state, isLoading: false };
     case FETCH_POST:
-      console.log("FETCH_POST are : ", action.payload);
       return {
         ...state,
         post: action.payload

@@ -4,8 +4,11 @@ export default makeStyles((theme) => ({
   media: {
     borderRadius: '20px',
     objectFit: 'cover',
-    width: '100%',
-    maxHeight: '600px',
+    width: '50vw',
+    maxHeight: '500px',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
 
   },
   card: {
