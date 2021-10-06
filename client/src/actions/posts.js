@@ -5,9 +5,11 @@ import * as api from '../api/index.js';
 export const getPost = (id) => async (dispatch) => {
   try {
     dispatch({ type: START_LOADING })
-    
+    console.log("id",id)
     const { data } = await api.fetchPost(id);
+    console.log("dataBD",data)
     dispatch({ type: FETCH_POST, payload: data });
+    console.log("dataAD",data)
 
     dispatch({ type: END_LOADING })
   } catch (error) {
