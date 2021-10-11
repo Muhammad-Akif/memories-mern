@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 import moment from "moment";
 import { useParams, useHistory } from "react-router-dom";
 import useStyles from "./styles.js"
-import { getPost, getPostsBySearch } from "../../actions/posts"
+import { getPost, getPostsBySearch } from "../../actio1ns/posts"
 import CommentSection from './commentSection.js';
 
 const PostDetails = () => {
