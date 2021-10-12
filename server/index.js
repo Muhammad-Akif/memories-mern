@@ -16,6 +16,10 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
 
+app.get('/', (req, res) => {
+  res.send('App is Running ...!')
+})
+
 const CONNECTION_URL = "mongodb+srv://akif:16421@cluster0.6dv6g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 const PORT = process.env.PORT|| 5000;
