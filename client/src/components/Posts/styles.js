@@ -11,4 +11,9 @@ export default makeStyles((theme) => ({
   actionDiv: {
     textAlign: 'center',
   },
+  circle: {
+    display: 'flex',
+    justifyContent: 'center',
+    padding: "15%"
+  }
 }));
