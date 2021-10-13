@@ -11,4 +11,4 @@ Project is created with
 * Heroku, Netlify (Deployment)
 
 ## Setup:
-$ run npm i && npm start for both client and server side to start the app
+$ run `npm i && npm start || yarn i && yarn start` for both client and server side to start the app
